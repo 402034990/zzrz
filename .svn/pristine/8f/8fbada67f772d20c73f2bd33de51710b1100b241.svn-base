@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.zhiwei.credit.model.agentAproval.BankCreditUserLog"
+        table="bank_credit_user_log"
+        select-before-update="false"
+        dynamic-update="false"
+        dynamic-insert="false"
+        optimistic-lock="version"
+    >
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+         <property
+            name="projectId"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="projectId"
+            length="19"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="projectName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="projectName"
+            length="128"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="creditType"
+            type="java.lang.Short"
+            update="true"
+            insert="true"
+            access="property"
+            column="creditType"
+            length="5"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="creditMoney"
+            type="java.math.BigDecimal"
+            update="true"
+            insert="true"
+            access="property"
+            column="creditMoney"
+            precision="14"
+            scale="2"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="commerType"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="commerType"
+            length="16"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="commerId"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="commerId"
+            length="19"
+            not-null="false"
+            unique="false"
+        />
+        
+        <property
+        name="bankCreditId"
+        type="java.lang.Long"
+        update="true"
+        insert="true"
+        access="property"
+        column="bankCreditId"
+        length="19"
+        not-null="false"
+        unique="false"
+    />
+        
+        
+        <property
+            name="status"
+            type="java.lang.Short"
+            update="true"
+            insert="true"
+            access="property"
+            column="status"
+            length="5"
+            not-null="false"
+            unique="false"
+        />
+        
+        <property
+	        name="createtime"
+	        type="java.util.Date"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="createtime"
+	        length="19"
+	        not-null="false"
+	        unique="false"
+        />
+        <property
+	        name="projectNum"
+	        type="java.lang.String"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="projectNum"
+	        length="32"
+	        not-null="false"
+	        unique="false"
+        />
+        
+        
+     </class>
+</hibernate-mapping>

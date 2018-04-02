@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zhiwei.credit.model.entityhbm.CashDeposit"
+		table="cash_deposit" select-before-update="false" dynamic-update="false"
+		dynamic-insert="false" optimistic-lock="version">
+		<id column="cash_deposit_id" length="20" name="id" type="java.lang.Long">
+			<generator class="native" />
+		</id>
+		<property column="cash_name"  insert="true"
+			lazy="false" length="255" name="cashName" type="java.lang.String"
+		   not-null="false" unique="false"/>
+		<property column="cash_money"  insert="true"
+			lazy="false" length="12" name="cashmoney" not-null="false" unique="false" type="java.math.BigDecimal" />
+		<property column="cash_rate"  insert="true"
+			lazy="false" length="12" name="cashrate"  not-null="false" unique="false" type="java.math.BigDecimal" />
+
+		<property column="cash_zhanyong_money" 
+			insert="true" lazy="false" length="12" not-null="false" unique="false" name="cashzhanyong" type="java.math.BigDecimal"
+			update="true" />
+
+		<property column="cash_shengyu_money"
+			insert="true" lazy="false" length="12" not-null="false" unique="false"  name="cashshengyu" type="java.math.BigDecimal" />
+
+		<property column="custormer_id"  insert="true"
+			lazy="false" length="20" not-null="false" unique="false" name="custormerId" type="java.lang.Long" />
+
+
+		<property column="custormer_type" insert="true"
+			lazy="false" not-null="false" unique="false" type="java.lang.String" name="custormerType" />
+
+		<property column="cash_date"  insert="true"
+			lazy="false" length="255" not-null="false" unique="false" name="cashdate" type="java.util.Date" />
+
+		<property column="custormer_name"  insert="true"
+			lazy="false" length="255" not-null="false" unique="false" name="custormerName" type="java.lang.String"
+			update="true" />
+		
+		<property column="cash_mobiphone"  insert="true"
+			lazy="false" length="50" not-null="false" unique="false" name="cashMobilphone" type="java.lang.String"
+			update="true" />
+			
+	   <property column="cash_legal_representative"  insert="true"
+			lazy="false" length="50" not-null="false" unique="false" name="cashLegalRepresentative" type="java.lang.String"
+			update="true" />
+			
+	   <property column="cash_count"
+		   insert="true"
+			lazy="false"
+			length="50" 
+			not-null="false"
+			unique="false"
+			name="cashCount" 
+			type="java.lang.String"
+			update="true" />
+	   <property column="custormerNum"
+		   insert="true"
+			lazy="false"
+			length="50" 
+			not-null="false"
+			unique="false"
+			name="custormerNum" 
+			type="java.lang.String"
+			update="true" />
+	   
+	   
+	   <property column="cashLegalRepresentativeId"
+		   insert="true"
+			lazy="false"
+			length="10" 
+			not-null="false"
+			unique="false"
+			name="cashLegalRepresentativeId" 
+			type="java.lang.Long"
+			update="true" />
+	   
+	   
+	   <property column="cashCountId"
+		   insert="true"
+			lazy="false"
+			length="10" 
+			not-null="false"
+			unique="false"
+			name="cashCountId" 
+			type="java.lang.Long"
+			update="true" />
+			
+		<property
+           name="requestNo"
+           type="java.lang.String"
+           update="true"
+           insert="true"
+           access="property"
+           column="requestNo"
+           length="255"
+           not-null="false"
+           unique="false"
+        />
+	   
+	   
+</class>
+</hibernate-mapping>

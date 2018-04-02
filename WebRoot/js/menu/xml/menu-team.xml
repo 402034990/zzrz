@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Menus id="Mod_team" text="贷款管理" iconCls="mod-org">
+	<Items id="slDealManger" text="贷款业务申请" iconCls="btn-tree-team2" >
+		 <Item id="CreateNewProjectFrom?operationType=SmallLoan_PersonalCreditLoanBusiness" text="贷款申请 " iconCls="btn-tree-team2" isControl="false">
+		 	<Function id="_isUpdateShop_1" text="是否修改贷款申请页面所属部门" iconCls="btn-flow-chart"></Function>
+		 </Item>
+		 
+		 <!--<Item id="CreateNewProjectFroms?operationType=SmallLoan_PersonalCreditLoanBusiness&amp;history=fastapp" text="个人快速审批流程 " iconCls="btn-tree-team2" isControl="false" />
+		 <Item id="CreateNewProjectFroms?operationType=SmallLoan_SmallLoanBusiness&amp;history=efastapp" text="企业快速审批流程" iconCls="btn-tree-team2" isControl="false" />
+		 <Item id="CreateNewProjectFroms?operationType=SmallLoan_PersonalCreditLoanBusiness&amp;history=pcnl" text="个人贷款标准流程 " iconCls="btn-tree-team2" isControl="false" />
+		 
+		 --><Item id="myFirstActivityTaskView" text="我的暂存业务" iconCls="btn-tree-team2" isControl="false"></Item>
+		 <Item id="CompleteTaskView" text="办结任务 " iconCls="btn-tree-team2" >
+			<Function id="_comFlowRecords" text="查看任务流转记录" iconCls="btn-detail"></Function>
+			<Function id="_comShowFlowImg" text="流程示意图" iconCls="btn-flow-chart"></Function>
+		 </Item>
+		 <Item id="MyProcessRunView_p" text="我参与的项目" iconCls="btn-tree-team2" >
+		 	<Function id="_comShowFlowImg_my" text="流程示意图" iconCls="btn-flow-chart"></Function>
+		 </Item>
+	</Items><!--
+ 	
+ 	<Items id="creditManagement" text="授信业务管理" iconCls="btn-tree-team2" >
+ 		<Item id="CreateNewProjectFrom?operationType=SmallLoan_PersonalCreditLoanBusiness&amp;history=bankCriet" text="授信申请 " iconCls="btn-tree-team2" isControl="false">
+ 			<Function id="_isUpdateShop_2" text="是否修改授信申请页面所属部门" iconCls="btn-flow-chart"></Function>
+ 		</Item>
+ 		<Item id="AgentCreditView" text="授信记录" iconCls="btn-tree-team2">
+ 			<Function id="_Credit_All" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+		    <Function id="_Credit_used_log" text="授信使用记录" iconCls="btn-add"></Function>
+			<Function id="_Credit_log_see" text="查看授信信息" iconCls="btn-see"></Function>
+			<Function id="_Credit_showFlowImg" text="流程示意图" iconCls="btn-see"></Function>
+		</Item>
+ 	</Items>
+ 	
+	--><Items id="SlSmallLoanProjectLaterQuery" text="贷款业务查询 " iconCls="btn-tree-team2">
+		<Item id="ApproveProjectManager?projectStatus=50" text="全部贷款业务" iconCls="btn-tree-team2" >
+			<Function id="ApproveProject_seeAll_50" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Function id="ApproveProject_see_50" text="查看项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_edit_50" text="编辑项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeAgreements_50" text="意见与说明记录" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeshowFlowImg_50" text="流程示意图" iconCls="btn-detail" />
+		</Item>
+		<Item id="ApproveProjectManager?projectStatus=0" text="办理中贷款" iconCls="btn-tree-team2" >
+			<Function id="ApproveProject_seeAll_0" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Function id="ApproveProject_see_0" text="查看项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_edit_0" text="编辑项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_remove_0" text="删除项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeAgreements_0" text="意见与说明记录" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeshowFlowImg_0" text="流程示意图" iconCls="btn-detail" />
+		</Item>
+		<Item id="ApproveProjectManager?projectStatus=1" text="已放款业务" iconCls="btn-tree-team2" >
+			<Function id="ApproveProject_seeAll_0" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Function id="ApproveProject_see_0" text="查看项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_edit_0" text="编辑项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_remove_0" text="删除项目" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeAgreements_0" text="意见与说明记录" iconCls="btn-detail" />
+			<Function id="ApproveProject_seeshowFlowImg_0" text="流程示意图" iconCls="btn-detail" />
+		</Item>
+		<!--<Item id="SmallLoanProjectManager?projectStatus=7" text="放款后贷款" iconCls="btn-tree-team2" >
+			<Function id="_seeAllPro_p7" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Function id="_seePro_p7" text="查看项目" iconCls="btn-detail"/>
+			<Function id="_detailPro_p7" text="编辑项目" iconCls="btn-edit" />
+			<Function id="_yjysm_p7" text="意见与说明" iconCls="btn-detail"/>
+			<Function id="_showFlowImg_p7" text="流程示意图" iconCls="btn-flow-chart"/>
+		</Item>
+		--><Item id="SmallLoanProjectManager?projectStatus=4" text="展期中贷款" iconCls="btn-tree-team2" >
+			<Function id="_seeAllPro_p4" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Functions id="_seePro_p4" text="查看项目" iconCls="btn-detail">
+			</Functions>
+			<Functions id="_detailPro_p4" text="编辑项目" iconCls="btn-edit" >
+			</Functions>
+			<Function id="_showFlowImg_p4" text="流程示意图" iconCls="btn-flow-chart"/>
+			<Function id="_yjysm_p4" text="意见与说明" iconCls="btn-detail"/>
+		</Item>
+		<Item id="SmallLoanProjectManager?projectStatus=8" text="违约处理贷款" iconCls="btn-tree-team2" >
+			<Function id="_seeAllPro_p8" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Functions id="_seePro_p8" text="查看项目" iconCls="btn-detail">
+			</Functions>
+			<Functions id="_detailPro_p8" text="编辑项目" iconCls="btn-edit" >
+			</Functions>
+			<Function id="_yjysm_p8" text="意见与说明" iconCls="btn-detail"/>
+			<Function id="_showFlowImg_p8" text="流程示意图" iconCls="btn-flow-chart"/>
+		</Item>
+		<Item id="SmallLoanProjectManager?projectStatus=2" text="已完成贷款" iconCls="btn-tree-team2" >
+			<Function id="_seeAllPro_p2" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Functions id="_seePro_p2" text="查看项目" iconCls="btn-detail">
+			</Functions>
+			<Functions id="_detailPro_p2" text="编辑项目" iconCls="btn-edit" >
+			</Functions>
+			<Function id="_yjysm_p2" text="意见与说明" iconCls="btn-detail"/>
+			<Function id="_showFlowImg_p2" text="流程示意图" iconCls="btn-flow-chart"/>
+		</Item>
+		<Item id="SmallLoanProjectManager?projectStatus=3" text="提前终止贷款" iconCls="btn-tree-team2" >
+			<Function id="_seeAllPro_p3" text="列表查询（查看所有列表记录）" iconCls="" isControl="false"/>
+			<Functions id="_seePro_p3" text="查看项目" iconCls="btn-detail">
+			</Functions>
+			<Functions id="_detailPro_p3" text="编辑项目" iconCls="btn-edit" >
+			</Functions>
+			<Function id="_yjysm_p3" text="意见与说明" iconCls="btn-detail"/>
+			<Function id="_showFlowImg_p3" text="流程示意图" iconCls="btn-flow-chart"/>
+		</Item>
+	</Items>
+	
+	<Items id="SlSmallLoanProjectAfter" text="贷后业务办理 " iconCls="btn-tree-team2">
+		<Item id="SlFundintentUrgTab?businessType=SmallLoan" text="还款催收" iconCls="btn-tree-team2" >
+		</Item> 
+		<Item id="FundLoanedProjectManager?managerType=1" text="贷后监管" iconCls="btn-tree-team2" >
+			<Function id="addSuperviseRecord" text="增加监管记录" iconCls="btn-add"/>
+		</Item>
+		<Item id="FundLoanedProjectManager?managerType=2" text="贷款展期" iconCls="btn-tree-team2" >
+			<Function id="handleExtension" text="展期办理" iconCls=""/>
+		</Item>
+		<Item id="FundLoanedProjectManager?managerType=3" text="提前还款" iconCls="btn-tree-team2" >
+			<Function id="handleFundAdvanceRepayment" text="提前还款办理" iconCls=""/>
+		</Item>
+		<Item id="FundLoanedProjectManager?managerType=13" text="利率变更" iconCls="btn-tree-team2" >
+			<Function id="InterestRateChanges" text="利率变更" iconCls=""/>
+		</Item>
+		<Item id="FundLoanedProjectManager?managerType=5" text="贷款结项" iconCls="btn-tree-team2" >
+			<Function id="smallLoanProjectFinished" text="办理结项" iconCls=""/>
+		</Item>
+		<Item id="FundLoanedProjectManager?managerType=4" text="违约处理" iconCls="btn-tree-team2" >
+			<Function id="startBreach" text="违约处理办理" iconCls=""/>
+		</Item>
+	</Items>
+	
+	<Items id="Finance" text="财务资金管理" iconCls="btn-tree-team2">
+		<Item id="SlBankAccountView" iconCls="btn-tree-team2" text="银行账户管理" >
+		    <Function id="_createAccount_b" text="添加账户" iconCls="btn-add" isControl="false" />
+			<Function id="_remove_b" text="删除账户" iconCls="btn-del"/>
+			<Function id="_see_b" text="查看账户" iconCls="btn-edetail"/>
+			<Function id="_edit_b" text="编辑账户" iconCls="btn-edit"/>
+			<Function id="_zhlsdetail_b" text="账户流水明细" iconCls="btn-del"/>
+		</Item>
+		<Item id="SlFundQlideView2" iconCls="btn-tree-team2" text="银行流水录入 " >
+		    <Function id="_creatednls_q" text="添加对内流水" iconCls="btn-add" isControl="false"/>
+			<Function id="_createdwls_q" text="添加对外流水" iconCls="btn-del" isControl="false"/>
+			<Function id="_createalldwls_q" text="批量添加对外流水" iconCls="sldownIcon" isControl="false"/>
+			<Function id="_seels_q" text="查看" iconCls="btn-detail"/>
+		    <Function id="_editls_q" text="编辑" iconCls="btn-edit"/>
+			<Function id="_removels_q" text="删除" iconCls="btn-del"/>
+			<Function id="_loadlsmb_q" text="下载流水模板" iconCls="sldownIcon"/>
+			<Function id="_uploadzjls_q" text="上传资金流水" iconCls="slupIcon"/>
+		</Item>
+		<Item id="CashQlideView" iconCls="btn-tree-team2" text="现金流水录入" >
+		   <Function id="_createall_b" text="批量添加" iconCls="btn-add" isControl="false"/>
+             <Function id="_createxjls_b" text="添加" iconCls="btn-add" isControl="false"/>
+			<Function id="_seexjls_b" text="查看" iconCls="btn-detail"/>
+			<Function id="_editxjls_b" text="编辑" iconCls="btn-edit"/>
+			<Function id="_removexjls_b" text="删除" iconCls="btn-del"/>
+		</Item>
+        <Item id="SlBankAccountQlideView" iconCls="btn-tree-team2" text="银行账户明细" /><!--
+        <Item id="AgentBailManagerView?businessType=SmallLoan" text="保证金管理" iconCls="btn-tree-team2">
+		    <Function id="_Agent_create" text="创建保证金账户" iconCls="btn-add"/>
+		    <Function id="_Agent_see" text="查看保证金账户" iconCls="btn-edit"/>
+		    <Function id="_Agent_add" text="增加保证金" iconCls="btn-edit"/>
+		    <Function id="_Agent_get" text="保证金支取" iconCls="btn-edit"/>
+			<Function id="_Agent_result" text="保证金记录" iconCls="btn-see"/>
+		</Item>
+	--></Items>
+	
+	<Items id="contactFinance" text="财务款项台账" iconCls="btn-tree-team2" >
+		<Item id="synthesizeSlFundIntent?businessType=SmallLoan" iconCls="btn-tree-team2" text="综合收款台账" >
+			<Function id="_liushui_f_synthesize_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_f_synthesize_SmallLoan" text="查看对账明细" iconCls="btn-detail"/>
+			<Function id="_uploaddownpz_f_synthesize_SmallLoan" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_complex_SmallLoan" text="预览凭证" iconCls="btn-setting"/>
+			<!--<Function id="_sdpp_f_synthesize_SmallLoan" text="手动跑批" iconCls="slupIcon"/>
+		--></Item>
+		<Item id="TabSlFundIntentPrincipalPay?businessType=SmallLoan" iconCls="btn-tree-team2" text="本金放款台账" >
+			<Function id="_liushui_f_principalPay_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_f_principalPay_SmallLoan" text="查看对账明细" iconCls="btn-detail"/>
+			<Function id="_ping_f_principalPay_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_principalPay_SmallLoan" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_principalPay_SmallLoan" text="预览凭证" iconCls="btn-setting"/>
+		</Item>
+		<Item id="TabSlFundIntentprincipalIncome?businessType=SmallLoan" iconCls="btn-tree-team2" text="本金收款台账" >
+		    <Function id="_liushui_f_principalIncome_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_f_principalIncome_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_f_principalIncome_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_fa_f_principalIncome_SmallLoan" text="罚息对账" iconCls="btn-ok"/>
+			<Function id="_YQ_f_principalIncome_SmallLoan" text="逾期对账" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_principalIncome_SmallLoan" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_principalIncome_SmallLoan" text="预览凭证" iconCls="btn-setting"/>
+			<Function id="_addTo_badCredit_principalIncome_SmallLoan" text="提交至不良征信库" iconCls="btn-setting"/>
+		</Item>
+		<Item id="TabSlFundIntentInterestIncome?businessType=SmallLoan" iconCls="btn-tree-team2" text="利息收款台账" >
+		    <Function id="_liushui_f_interestIncome_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_f_interestIncome_SmallLoan" text="查看对账明细" iconCls="btn-detail"/>
+			<Function id="_ping_f_interestIncome_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_fa_f_interestIncome_SmallLoan" text="罚息对账" iconCls="btn-ok"/>
+			<Function id="_YQ_f_interestIncome_SmallLoan" text="逾期对账" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_interestIncome_SmallLoan" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_interestIncome_SmallLoan" text="预览凭证" iconCls="btn-setting"/>
+			<Function id="_addTo_badCredit_interestIncome_SmallLoan" text="提交至不良征信库" iconCls="btn-setting"/>
+		</Item>
+		
+		<Item id="TabSlFundIntentconsultationMoney?businessType=consultationMoney" iconCls="btn-tree-team2" text="管理咨询费台账" >
+		    <Function id="_liushui_f_interestIncome_consultationMoney" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_cash_f_interestIncome_consultationMoney" text="现金对账" iconCls="btn-details"/>
+			<Function id="_liushuisee_f_interestIncome_consultationMoney" text="查看对账明细" iconCls="btn-detail"/>
+			<Function id="_ping_f_interestIncome_consultationMoney" text="核销" iconCls="btn-ok"/>
+			<Function id="_fa_f_interestIncome_consultationMoney" text="罚息对账" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_interestIncome_consultationMoney" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_interestIncome_consultationMoney" text="预览凭证" iconCls="btn-setting"/>
+			<Function id="_addTo_badCredit_interestIncome_consultationMoney" text="提交至不良征信库" iconCls="btn-setting"/>
+		</Item>
+		<Item id="TabSlFundIntentServiceMoney?businessType=serviceMoney" iconCls="btn-tree-team2" text="财务服务费台账" >
+		    <Function id="_liushui_f_interestIncome_serviceMoney" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_cash_f_interestIncome_serviceMoney" text="现金对账" iconCls="btn-details"/>
+			<Function id="_liushuisee_f_interestIncome_serviceMoney" text="查看对账明细" iconCls="btn-detail"/>
+			<Function id="_ping_f_interestIncome_serviceMoney" text="核销" iconCls="btn-ok"/>
+			<Function id="_fa_f_interestIncome_serviceMoney" text="罚息对账" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_interestIncome_serviceMoney" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_interestIncome_serviceMoney" text="预览凭证" iconCls="btn-setting"/>
+			<Function id="_addTo_badCredit_interestIncome_serviceMoney" text="提交至不良征信库" iconCls="btn-setting"/>
+		</Item>
+		<Item id="TabSlFundIntentOtherPay?businessType=SmallLoan" iconCls="btn-tree-team2" text="退费支出台账" >
+			<Function id="_liushui_f_OtherPay_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_f_OtherPay_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_f_OtherPay_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_uploaddownpz_f_OtherPay_SmallLoan" text="上传/下载凭证" iconCls="slupIcon"/>
+			<Function id="_previewpz_f_OtherPay_SmallLoan" text="预览凭证" iconCls="btn-setting"/>
+		</Item>
+		<Item id="SlActualToChargeIncomeView?businessType=SmallLoan" iconCls="btn-tree-team2" text="费用收取台账" >
+		    <Function id="_liushui_a_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_a_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_a_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_sOverdue_a_SmallLoan" text="逾期状态" iconCls="btn-setting"/>
+		</Item>
+		<!--<Item id="BailLedger" iconCls="btn-tree-team2" text="保证金台账" >
+		    <Function id="_bailLedger_reconciliation" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_see_reconciliation" text="查看" iconCls="btn-detail"/>
+		</Item>
+		--><Item id="VFundDetail?businessType=SmallLoan" iconCls="btn-tree-team2" text="本息收支对账日志" >
+		    <Function id="_cxdz_f_SmallLoan" text="撤销对账" iconCls="btn-setting"/>
+		</Item>
+		<Item id="VPunishDetail?businessType=SmallLoan" iconCls="btn-tree-team2" text="逾期罚息对账日志" >
+		    <Function id="_punish_back_SmallLoan" text="撤销对账" iconCls="btn-setting"/>
+		</Item>
+		<Item id="VChargeDetail?businessType=SmallLoan" iconCls="btn-tree-team2" text="费用收支对账日志" >
+		 	<Function id="_cxfydzlsjl_f_SmallLoan" text="撤销对账" iconCls="btn-setting"/>
+		</Item>
+	</Items>
+	
+	<Items id="DocumentManagerSmallLoan" text="贷款合同管理" iconCls="btn-tree-team2" >
+		<Item id="CreditDocumentManagerZW?businessType=SmallLoan" text="合同模板制作" iconCls="btn-tree-team2" isShow="false" >
+			<Function id="_create_cdm_SmallLoan" text="新增模板类型" iconCls="btn-add"/>
+			<Function id="_edit_cdm_SmallLoan" text="修改模板类型信息" iconCls="btn-edit"/>
+			<Function id="_remove_cdm_SmallLoan" text="删除模板类型" iconCls="btn-del"/>
+			<Function id="_read_cdm_SmallLoan" text="查看系统要素" iconCls="btn-readdocument"/>
+			<Function id="_output_cdm_SmallLoan" text="导出系统要素" iconCls="btn-xls"/>
+			<Function id="_create_cddm_SmallLoan" text="新增模板文档项" iconCls="btn-add"/>
+			<Function id="_edit_cddm_SmallLoan" text="修改模板文档项" iconCls="btn-edit"/>
+			<Function id="_remove_cddm_SmallLoan" text="删除模板文档项" iconCls="btn-del"/>
+		</Item>
+		<Item id="ContractManager?businessType=SmallLoan" text="合同管理" iconCls="btn-tree-team2">
+			<Function id="_seeProjectInfo_cm" text="查看项目详情" iconCls="btn-detail"/>
+		</Item>
+		<Item id="ContractQuery" text="合同查询" iconCls="btn-tree-team2" >
+			<Function id="_seeProjectInfo_cq" text="查看项目详情" iconCls="btn-detail"/>
+		</Item>
+	</Items>
+	
+	<Items id="propertyView?businessType=SmallLoan" text="抵质押物管理" iconCls="btn-tree-team2">
+		<Item id="MortgageManagement?businessType=SmallLoan" text="抵质押物列表" iconCls="btn-tree-team2">
+			<Function id="_seeMortgageInfo_SmallLoan" text="查看抵质押物详情" iconCls="btn-readdocument"/>
+			<Function id="_seeThirdContract_SmallLoan" text="查看合同详情" iconCls="btn-readdocument"/>
+			<Function id="_seeProjectInfo_SmallLoan" text="查看项目详情" iconCls="btn-readdocument">
+				<url>/creditFlow/getProjectViewObjectCreditProject.do</url>
+			</Function>
+			<Function id="_banliMortgage_SmallLoan" text="办理抵质押物" iconCls="btn-flow-design">
+				<url>/credit/mortgage/getMortgageInfo.do</url>
+				<url>/credit/mortgage/updateMortgage.do</url>
+			</Function>
+			<Function id="_relieveMortgage_SmallLoan" text="解除抵质押物 " iconCls="deleteIcon">
+				<url>/credit/mortgage/getMortgageInfo.do</url>
+				<url>/credit/mortgage/updateMortgage.do</url>
+			</Function>
+			<Function id="_inStore_SmallLoan" text="入库办理" iconCls="btn-flow-design"/>
+			<Function id="_outStore_SmallLoan" text="出库办理" iconCls="deleteIcon"/>
+			<Function id="_GSPAdd_SmallLoan" text="GPS安装办理" iconCls="btn-flow-design"/>
+			<Function id="_GSPSee_SmallLoan" text="GPS安装查看" iconCls="btn-readdocument"/>
+		</Item>
+	</Items>
+	
+	<Items id="PlArchivesViewMenu?businessType=SmallLoan" text="贷款档案管理" iconCls="btn-tree-team2" >
+		 <Item id="PlProjectArchivesView?businessType=SmallLoan" text="项目归档管理" iconCls="btn-tree-team2">
+		    <Function id="_Archives_add_SmallLoan" text="办理归档" iconCls="btn-see"/>
+			<Function id="_Archivesproj_see_SmallLoan" text="查看项目详情" iconCls="btn-see"/>
+			<Function id="_Archivesproj_some_SmallLoan" text="批量归档" iconCls="btn-see"/>
+		</Item>
+	</Items>
+	
+	<Items id="productConfigManager" text="贷款产品配置" iconCls="btn-tree-team2" isPublic="false" >
+		  <Item id="BpProductParameterView" text="贷款产品设计" iconCls="btn-tree-team2" >
+		    <Function id="_bpProductParameter_add" text="新增产品" iconCls="btn-add"/>
+			<Function id="_bpProductParameter_edit" text="配置产品" iconCls="btn-edit"/>
+			<Function id="_bpProductParameter_del" text="删除产品" iconCls="btn-del"/>
+			<Function id="_bpProductParameter_see" text="查看产品" iconCls="btn-detail"/>
+			<Function id="_bpProductParameter_empower" text="授权产品" iconCls="btn-edit"/>
+		 </Item>
+		 <Items id="basicMaterials" text="基础材料配置" iconCls="btn-tree-team2" >
+			 <Item id="OurSmallloanMaterialsView?businessType=SmallLoan" text="基础贷款材料管理" iconCls="btn-tree-team2">
+				<Function id="_create_dc" text="添加贷款材料" iconCls="btn-add"/>
+				<Function id="_edit_dc" text="编辑贷款材料" iconCls="btn-edit"/>
+				<Function id="_remove_dc" text="删除贷款材料" iconCls="btn-del"/>
+				<Function id="_create_dcx" text="添加贷款材料项" iconCls="btn-add"/>
+				<Function id="_edit_dcx" text="编辑贷款材料项" iconCls="btn-edit"/>
+				<Function id="_remove_dcx" text="删除贷款材料项" iconCls="btn-del"/>
+			</Item>
+			<Item id="OurProcreditAssuretenetGuaranteeView?businessType=SmallLoan" text="基础贷款条件管理" iconCls="btn-tree-team2">
+				<Function id="_create_zr_SmallLoan" text="添加准入原则" iconCls="btn-add"/>
+				<Function id="_remove_zr_SmallLoan" text="删除准入原则" iconCls="btn-del"/>
+				<Function id="_edit_zr_SmallLoan" text="编辑准入原则" iconCls="btn-edit"/>
+			</Item>
+			<Item id="OurArchivesMaterialsView?businessType=SmallLoan" text="基础贷款归档材料管理" iconCls="btn-tree-team2" isShow="false">
+				<Function id="_create_archives_SmallLoan" text="添加归档材料" iconCls="btn-add"/>
+				<Function id="_remove_archives_SmallLoan" text="删除归档材料" iconCls="btn-del"/>
+				<Function id="_edit_archives_SmallLoan" text="编辑归档材料" iconCls="btn-edit"/>
+			</Item>
+			<Item id="SlPlansToChargeView?businessType=SmallLoan" iconCls="btn-tree-team2" text="基础收费类型">
+				<Function id="_create_zxpz_SmallLoan" text="添加" iconCls="btn-add"/>
+				<Function id="_remove_zxpz_SmallLoan" text="删除" iconCls="btn-del"/>
+				<Function id="_save_zxpz_SmallLoan" text="保存" iconCls="btn-save"/>
+				<Function id="_flush_zxpz_SmallLoan" text="刷新" iconCls="btn-save"/>
+			</Item>
+			<Item id="DownLoadDocumentManager?businessType=SmallLoan" text="文档模板管理" iconCls="btn-tree-team2" isShow="false" >
+				<Function id="_create_ddm_SmallLoan" text="新增模板文档项" iconCls="btn-add"/>
+				<Function id="_edit_ddm_SmallLoan" text="修改模板文档项" iconCls="btn-edit"/>
+				<Function id="_remove_ddm_SmallLoan" text="删除模板文档项" iconCls="btn-del"/>
+			</Item>
+		</Items>  
+	</Items>
+		<Items id="WithinManagerIds?businessType=SmallLoan" text="查询统计" iconCls="btn-tree-team2" >
+		 <Item id="WithinManager?businessType=SmallLoan" text="逾期查询" iconCls="btn-tree-team2">
+		</Item>
+		 <Item id="customerAnalysis?businessType=SmallLoan" text="客户分析统计" iconCls="btn-tree-team2">
+		</Item>
+	</Items>
+	<!--  
+	<Items id="ncManager" text="NC推送记录管理" iconCls="btn-tree-team2" isPublic="false" >
+		<Item id="NcPushRecordView" text="NC推送记录查询" iconCls="btn-tree-team2" ></Item>
+	</Items>
+--></Menus>

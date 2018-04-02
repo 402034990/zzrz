@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+	name="com.bankIntermediary.model.CustomerLabel"
+	table="customer_label" select-before-update="false"
+	dynamic-update="false" dynamic-insert="false" optimistic-lock="version">
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+        
+    	 <property
+	         name="labelName"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="labelName"
+	         length="128"
+	         not-null="true"
+	         unique="false"
+	     />
+    	 <property
+	         name="remark"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="remark"
+	         length="512"
+	         not-null="true"
+	         unique="false"
+	     />
+    	 <property
+	         name="grade"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="grade"
+	         length="128"
+	         not-null="true"
+	         unique="false"
+	     />
+    	
+    	 <property
+	         name="path"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="path"
+	         length="128"
+	         not-null="true"
+	         unique="false"
+	     />
+    	 <property
+	         name="operationName"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="operationName"
+	         length="32"
+	         not-null="true"
+	         unique="false"
+	     />
+	    	 
+    	
+    	<property
+	        name="isShow"
+	        type="java.lang.Short"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="isShow"
+	        length="8"
+	        unique="false"
+	    />
+    	
+    	<property
+	        name="createtime"
+	        type="java.util.Date"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="createtime"
+	        length="20"
+	        not-null="false"
+	        unique="false"
+	    />
+        <property
+	        name="operationId"
+	        type="java.lang.Long"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="operationId"
+	        length="20"
+	        not-null="true"
+	        unique="false"
+	    />
+       
+    	 <property
+	         name="parentId"
+	         type="java.lang.Long"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="parentId"
+	         length="20"
+	         not-null="true"
+	         unique="false"
+	     />
+	        
+    </class>
+</hibernate-mapping>

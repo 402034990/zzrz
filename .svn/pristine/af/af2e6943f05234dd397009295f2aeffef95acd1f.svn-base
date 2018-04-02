@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="com.zhiwei.credit.model.creditFlow.common.BpDicAccountTitleSet"
+        table="bp_dic_account_title_set"
+        select-before-update="false"
+        dynamic-update="false"
+        dynamic-insert="false"
+        optimistic-lock="version"
+    >
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+         <property
+            name="listId"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="listId"
+            length="19"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="keyName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="keyName"
+            length="20"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="keyId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="keyId"
+            length="20"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="subTitle"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="subTitle"
+            length="255"
+            not-null="false"
+            unique="false"
+        />
+        <property
+            name="subKey"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="subKey"
+            length="100"
+            not-null="false"
+            unique="false"
+        />
+            <property
+            name="title"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="title"
+            length="255"
+            not-null="false"
+            unique="false"
+        />
+     </class>
+</hibernate-mapping>

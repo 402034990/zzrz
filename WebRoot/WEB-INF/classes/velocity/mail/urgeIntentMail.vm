@@ -1,0 +1,11 @@
+<html>
+	<title>${appUser.fullname}</title>
+	<body>
+		<p>您好:</p>
+		<p>根据       字第　　 号借款合同，你单位(个人)于 ${projectStartDate}向我公司所借 贷款（大写）${projectMoney}，
+		现尚余${notMoney}将于将于${intentDate}到期，请抓紧筹措资金按期归还借款，如到期未还，我公司即
+		依照借款合同有关规定予以处理。 </p>
+		
+		<p>注：本邮件由<业务系统>系统平台自动产生，请勿回复。</p>
+	</body>
+</html>

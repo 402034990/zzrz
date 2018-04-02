@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd  http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+ <!-- 第三方支付查询接口  -->
+ 	 <bean id="iPayService" class="com.zhiwei.credit.service.pay.impl.IPayServiceImpl">
+   	 </bean>
+   	  <!-- 富有 支付 -->
+   	  <bean id="thirdPayService" class="com.zhiwei.credit.service.thirdPay.fuiou.impl.ThirdPayServiceImpl">
+   	 </bean>
+   	 <bean id="goPayThirdPayService" class="com.zhiwei.credit.service.thirdPay.goPay.impl.GoPayThirdPayServiceImpl">
+   	 </bean>
+   	  <bean id="thirdpayClientService" class="com.zhiwei.credit.service.thirdPay.impl.ThirdpayClientServiceImpl">
+   	 </bean>
+</beans>

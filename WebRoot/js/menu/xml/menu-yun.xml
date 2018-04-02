@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Menus id="Mod_yun" text="一元云购系统" iconCls="btn-tree-team30">
+    <Items id="12345678" text="合作机构管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+    	
+<!--    	<Item id="EcPayInfoView" text="夺宝币兑换记录 " iconCls="btn-tree-team6" ></Item>-->
+   		 <Item id="payTypeView" text="第三方支付管理 " iconCls="btn-tree-team6" ></Item>
+   		 <Item id="SupplyerView" text="货源方信息管理 " iconCls="btn-tree-team6" ></Item>
+   		 <Item id="SupplyerSubRelationView" text="货源方经营范围管理" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    <Items id="1231231231231687" text="宝物分类管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="ProductMainclassView" text="一级分类管理" iconCls="btn-tree-team6" ></Item>
+     	<Item id="EcProductSubclassView" text="二级分类管理" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    <Items id="12312312312312" text="宝物夺宝管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="ProductIntroductionView" text="宝物介绍管理" iconCls="btn-tree-team6" ></Item>
+     	<Item id="ProductPriceView" text="夺宝定价管理" iconCls="btn-tree-team6" ></Item>
+     	<Item id="ProductAttributeView" text="夺宝属性管理" iconCls="btn-tree-team6" ></Item>
+        <Item id="ProductPublishView" text="宝物发布管理" iconCls="btn-tree-team6" ></Item>
+        <Item id="ProductCloseView" text="宝物关闭管理" iconCls="btn-tree-team6" ></Item>
+        <Item id="ProductRePublishView" text="宝物启用管理" iconCls="btn-tree-team6" ></Item>
+        <Item id="ProductBackBoxView" text="宝物回收站" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    
+    <Items id="333333333333" text="宝物发货管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="AddressNotRecognizView" text="中奖人地址未确定" iconCls="btn-tree-team6" ></Item>
+     	<Item id="OrderConfirmationView" text="中奖宝物下单确认" iconCls="btn-tree-team6" ></Item>
+     	<Item id="PaymentConfirmationView" text="下单商品支付确认" iconCls="btn-tree-team6" ></Item>
+        <Item id="SendProductNoticeView" text="宝物发货信息通知" iconCls="btn-tree-team6" ></Item>
+        <Item id="DelayedSendNoticeView" text="宝物延期发货通知" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    <Items id="444444444444444444444" text="宝物晒单管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="StayShowView" text="待审核晒单" iconCls="btn-tree-team6" ></Item>
+     	<Item id="OverShowView" text="已审核晒单" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    <Items id="5555555555555555555555" text="宝物换货管理" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="StayExchangeView" text="待处理申请" iconCls="btn-tree-team6" ></Item>
+     	<Item id="OverExchangeView" text="已处理申请" iconCls="btn-tree-team6" ></Item>
+    </Items>
+     <Items id="666666666666666666" text="宝物夺宝台账" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="DbingView" text="夺宝中台账" iconCls="btn-tree-team6" ></Item>
+     	<Item id="ForRewardView" text="待开奖台账" iconCls="btn-tree-team6" ></Item>
+     	<Item id="ForSendView" text="待发货台账" iconCls="btn-tree-team6" ></Item>
+     	<Item id="AlreadySendView" text="已发货台账" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    
+      <Items id="8888" text="会员夺宝统计" iconCls="mod-obligationSourceQuery" isPublic="false">
+     	<Item id="DbStatisticsView" text="会员夺宝统计" iconCls="btn-tree-team6" ></Item>
+     	<Item id="LuckdetailsView" text="会员中奖明细" iconCls="btn-tree-team6" ></Item>
+     	<Item id="BpRechargeInfoView" text="会员充值记录" iconCls="btn-tree-team6" ></Item>
+     	<Item id="AddressReceiveView" text="会员收货地址查询" iconCls="btn-tree-team6" ></Item>
+    </Items>
+     <Items id="777" text="报表统计" iconCls="mod-obligationSourceQuery" isPublic="false">
+<!--     	<Item id="tongji123123123" text="充值统计报表" iconCls="btn-tree-team6" ></Item>-->
+     	<!--  <Item id="PayBuyProductView" text="购买商品支出统计" iconCls="btn-tree-team6" ></Item>-->
+     	 	<Item id="PayBuyProductReportView?reportKey=PayBuyProductReportViewS" text="购买商品支出统计" iconCls="btn-tree-team6" ></Item>
+    <!--   	<Item id="GrossProfitView" text="毛利润统计表" iconCls="btn-tree-team6" ></Item>-->
+     	<Item id="GrossProfitReprotView?reportKey=GrossProfitReprotViewS" text="毛利润统计表" iconCls="btn-tree-team6" ></Item>
+     	
+<!--     	<Item id="tongji634534534" text="红包派发统计表" iconCls="btn-tree-team6" ></Item>-->
+     <!--  	<Item id="HeaTrankView" text="宝物热度排名" iconCls="btn-tree-team6" ></Item>-->
+     	<Item id="HeaTrankReportView?reportKey=HeaTrankReportViewS"  text="宝物热度排名" iconCls="btn-tree-team6" ></Item>
+     	<Item id="DbRecommend?reportKey=DbOneRecommend"  text="一级业绩统计表" iconCls="btn-tree-team6"></Item>
+     	<Item id="DbRecommend?reportKey=DbSecondRecommend"  text="二级业绩统计表" iconCls="btn-tree-team6"></Item>
+     	<Item id="SalesAmountDateView" text="销量金额日统计图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="SaleAmountDateYearView" text="销量金额月统计图 " iconCls="btn-tree-team6" ></Item>
+     	<Item id="NewRegMemDayView" text="新增注册会员日趋势图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="NewRegMemView" text="新增注册会员月趋势图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="MemberActivityDayView" text="会员活跃度日趋势图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="MemberActivityYearView" text="会员活跃度月趋势图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="RechargeStatisticsDayView" text="日充值金额趋势图" iconCls="btn-tree-team6" ></Item>
+     	<Item id="RechargeStatisticsView" text="月充值金额趋势图" iconCls="btn-tree-team6" ></Item>
+    </Items>
+    
+    <Items id="DbofflinePerformance" text="夺宝推荐管理" iconCls="menu-finance" isPublic="false" >
+		<Item id="DbRecommendCodeCreateView" iconCls="menu-finance" text="员工推荐码生成">
+			<Function id="_seeAll_erp_db" text="查看所有Erp账号" iconCls="btn-detail"/>
+			<Function id="_openingP2PAccount_db" text="开通P2P账号" iconCls="menu-add"/>
+			<Function id="_bindingP2PAccount_db" text="绑定P2P账号" iconCls="menu-add"/>
+			<Function id="_closeP2PAccount_db" text="禁用P2P账号" iconCls="menu-add"/>
+			<Function id="_openP2PAccount_db" text="开启P2P账号" iconCls="menu-add"/>
+			<Function id="_exportP2PAccount_db" text="导出列表" iconCls="btn-detail"/>
+		</Item>
+		<Item id="DbRecommendCountsView" iconCls="menu-finance" text="推荐个数查询">
+			<Function id="_exportRecommendCount_db" text="导出列表" iconCls="btn-detail"/>
+		</Item>
+		<Item id="DbRecommendPerformanceView" iconCls="menu-finance" text="推荐业绩查询">
+			<Function id="_exportPerformance" text="导出列表" iconCls="btn-detail"/>
+		</Item>
+		<Item id="DbOffLinePerformanceDetail?type=one" iconCls="menu-finance" text="一级员工业绩查询">
+			<Function id="_exportPerformance_one_db" text="导出列表" iconCls="btn-detail"/>
+		</Item>
+		<Item id="DbOffLinePerformanceDetail?type=two" iconCls="menu-finance" text="二级员工业绩查询">
+			<Function id="_exportPerformance_two_db" text="导出列表" iconCls="btn-detail"/>
+		</Item>
+	</Items>
+</Menus>

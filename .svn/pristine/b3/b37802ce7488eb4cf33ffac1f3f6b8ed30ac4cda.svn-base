@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<zhiwei>
+	<description>zhiwei配置文件</description>
+	<systemConfig>
+		<systemVersion>Version 3.5</systemVersion>
+		<isGroupVersion>false</isGroupVersion>
+		<isOA>true</isOA>
+		<!-- 宽限日  -->
+		<graceDayNum>5</graceDayNum>
+		<!-- Ftp配置 -->
+<!--		<ftpIp>192.168.1.103</ftpIp>-->
+<!--		<ftpUsName>zyht</ftpUsName>-->
+<!--		<ftpPss>zyht</ftpPss>-->
+<!--		<ftpPort>21</ftpPort>-->
+		<ftpIp>127.0.0.1</ftpIp>
+		<ftpUsName>hurong_erp</ftpUsName>
+		<ftpPss>123456</ftpPss>
+		<ftpPort>21</ftpPort>
+		<!-- 生成压缩文件路径 根目录 -->
+		<zipOutPutPath>E:\\bank\\</zipOutPutPath>
+		<!-- 前台上传图片地址 D:\\CreditSoft\\tomcat6\\webapps\\ROOT\\webfile\\-->
+		<webOutPutPath>E:\\temp\\</webOutPutPath>
+		<!-- 算头不算尾0 算头又算尾1  -->
+		<interest>0</interest>
+		<isActualDay>yes</isActualDay>
+		<!-- 罚息的收取方式第一种：按照剩余金额计算罚息,0表示 金额第二种如果剩余金额不为0则按全部金额计算 1表示-->
+		<defaultInterest>1</defaultInterest>
+		<!-- 默认压缩图片的高宽-->
+		<minCompressImageWidth>100</minCompressImageWidth>
+		<minCompressImageHeight>100</minCompressImageHeight>
+		<CompressImageWidth>400</CompressImageWidth>
+		<CompressImageHeight>400</CompressImageHeight>
+		<!--压缩文件名-->
+		<minCompressionFileName>min_compression</minCompressionFileName>
+		<CompressionFileName>compression</CompressionFileName>
+		<!--项目名称-->
+		<projStr>proj_wenandai</projStr>
+		<controlMoney>5000000</controlMoney>
+		<webServiceUrlRs>http://localhost:9099/zhiwei_p2p_v3.5.1/ws/</webServiceUrlRs>
+		<webServiceUrlWs>http://localhost:9099/zhiwei_p2p_v3.5.1/ws/resultParamsService</webServiceUrlWs>
+	</systemConfig>
+</zhiwei>

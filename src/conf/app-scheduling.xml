@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans default-lazy-init="true">
+	<bean id="scheduler"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		lazy-init="false">
+		<property name="triggers">
+			<list>
+				<!-- 监管计划 -->
+				<ref local="globalSupervisemanageTrigger"/>
+				
+				<!-- 传统罚息计算 -->
+				<ref local="slcreatePunishByTiming"/>
+				
+				<!-- 定时NC推送 -->
+				<ref local="ncPush"/>
+			</list>
+		</property>
+	</bean>
+    
+	<!--传统项目的罚息计算 -->
+	<bean id="slcreatePunishByTiming" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<!-- 早上二点钟开始调用SENDWARMMESSAGE方法-->
+		<property name="cronExpression">
+		     <value>0 0 2 * * ?</value>
+		</property> 
+	   <property name="jobDetail" ref="slcreatePunishByTimingDetial"/>
+	</bean>
+    <bean id="slcreatePunishByTimingDetial" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="slFundIntentService"></property>
+        <property name="targetMethod" value="createPunishByTiming"></property>
+        <property name="concurrent" value="false"></property>
+    </bean>
+    
+    <!-- 每两分钟检查要推送的监管计划	-->
+    <bean id="globalSupervisemanageTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="cronExpression">
+		    <value>0 0/2 * * * ?</value>
+		</property> 
+	   <property name="jobDetail" ref="globalSupervisemanageDetail"/>
+	</bean>
+	<bean id="globalSupervisemanageDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="globalSupervisemanageService"></property>
+        <property name="targetMethod" value="supervisemanagePlanPush"></property>
+        <property name="concurrent" value="false"></property>
+    </bean>
+    
+     <!-- 每天凌晨两点检查要推送的NC记录	-->
+    <bean id="ncPush" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="cronExpression">
+		    <value>0 0 2 * * ?</value>
+		</property> 
+	   <property name="jobDetail" ref="startDetail"/>
+	</bean>
+	<bean id="startDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="ncPushRecordService"></property>
+        <property name="targetMethod" value="automaticPush"></property>
+        <property name="concurrent" value="false"></property>
+    </bean>
+</beans>

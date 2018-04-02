@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.zhiwei.credit.model.entityhbm.CashDetail" table="cash_detail">
+  <id column="id" length="20" name="id" type="java.lang.Long">
+   <generator class="native"/>
+  </id>
+  <property column="cash_deposit_id"  insert="true"
+   lazy="false" length="255" name="cashdepositid" type="java.lang.Long" update="true"/>
+ 
+  <property column="create_date"  insert="true"
+   lazy="false" length="12" name="createDate"
+   type="java.util.Date" />
+  
+  <property column="cash_type"  insert="true"
+   lazy="false" length="12" name="cashType"
+    />
+ 
+  <property column="project_id"  insert="true"
+   lazy="false" length="12" name="projectId"
+   type="java.lang.Long" />
+  
+  <property column="project_name"  insert="true"
+   lazy="false" length="128" name="projectName"
+   type="java.lang.String" />
+  
+  <property column="state"  insert="true"
+   lazy="false" length="20" name="state"  />
+  
+  
+  <property column="declition"  insert="true"
+   lazy="false" length="255" name="declibtion" type="java.lang.String" />
+   
+   <property column="cash_money"  insert="true"
+   lazy="false" length="12" name="cashmoney" type="java.math.BigDecimal" />
+   
+   <property column="oprate_person"  insert="true"
+   lazy="false" length="20" name="oprateName" type="java.lang.String" />
+   
+   <property column="projectNum"  insert="true"
+	   lazy="false" length="64" name="projectNum" type="java.lang.String" />
+   <property column="oprateNameId"  insert="true"
+	   lazy="false" length="10" name="oprateNameId" type="java.lang.Long" update="true"/>
+	   
+   <property 
+   		name="factDate"
+   		type="java.util.Date"
+   		column="factDate"
+   		insert="true"
+   		lazy="false"
+   		length="12"
+   	/>
+   
+   <property
+        name="afterMoney"
+        type="java.math.BigDecimal"
+        update="true"
+        insert="true"
+        access="property"
+        column="afterMoney"
+        precision="20"
+        scale="5"
+        not-null="false"
+        unique="false"
+    />
+    
+    <property
+        name="notMoney"
+        type="java.math.BigDecimal"
+        update="true"
+        insert="true"
+        access="property"
+        column="notMoney"
+        precision="20"
+        scale="5"
+        not-null="false"
+        unique="false"
+    />
+    <property
+            name="requestNo"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            access="property"
+            column="requestNo"
+            length="255"
+            not-null="false"
+            unique="false"
+        />
+    
+    <many-to-one name="slFundQlide" class="com.zhiwei.credit.model.creditFlow.finance.SlFundQlide">	
+		<column name="fundQlideId" />
+	</many-to-one>
+ </class>
+</hibernate-mapping>

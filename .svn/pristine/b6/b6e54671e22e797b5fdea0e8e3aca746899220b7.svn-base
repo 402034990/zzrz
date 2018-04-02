@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Menus id="Mod_customer" text="客户中心" iconCls="mod-org"> 
+	<!--
+		<Items id="ElectricMarketManageme" text="借款意向客户" iconCls="btn-tree-team23" isPublic="false">
+		 	<Item id="CsProspectivePersonTab?ProsperctiveType=2&amp;personType=0" iconCls="btn-tree-team23" text="我的意向客户">
+				<Function id="_Prospective_cust_see_All_2_0" text="查看所有" iconCls="btn-add"/>
+				<Function id="_Prospective_cust_add_2_0" text="增加" iconCls="btn-add"/>
+				<Function id="_Prospective_cust_see_2_0" text="查看" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_edit_2_0" text="编辑" iconCls="btn-edit"/>			
+				<Function id="_Prospective_cust_dele_2_0" text="删除" iconCls="btn-delete"/>
+				<Function id="_Prospective_cust_changeType_2_0" text="客户转化" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_followUp_2_0" text="跟进" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_setNextTime_2_0" text="设置下次联系时间" iconCls="btn-detail"/>
+			</Item>
+			<Item id="CsProspectivePersonDistributionView?personType=0" iconCls="btn-tree-team23" text="意向资源分配">
+				<Function id="_Prospective_distribution_All_0" text="查看所有意向资源" iconCls="btn-detail"/>
+				<Function id="_Prospective_distribution_add_0" text="增加" iconCls="btn-add"/>
+				<Function id="_Prospective_distribution_see_0" text="查看" iconCls="btn-detail"/>
+				<Function id="_Prospective_distribution_edit_0" text="编辑" iconCls="btn-edit"/>			
+				<Function id="_Prospective_distribution_dele_0" text="删除" iconCls="btn-delete"/>
+				<Function id="_Prospective_distribution_grant_0" text="意向分配" iconCls="btn-detail"/>
+			</Item>
+			<Item id="CsProspectivePersonFollowUpManager?personType=0" iconCls="btn-tree-team23" text="跟进记录管理">
+				<Function id="_Prospective_followUp_All_0" text="查看所有跟进记录" iconCls="btn-detail"/>
+				<Function id="_Prospective_followUp_info_0" text="跟进详情" iconCls="btn-detail"/>
+				<Function id="_Prospective_followUp_commonent_0" text="跟进点评" iconCls="btn-detail"/>
+			</Item>
+			<Item id="CsProspectivePersonView?ProsperctiveType=1&amp;personType=0" iconCls="btn-tree-team23" text="已转化为正式客户">
+				<Function id="_Prospective_cust_see_All_1_0" text="查看所有" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_see_1_0" text="查看" iconCls="btn-detail"/>
+			</Item>
+			<Item id="CsProspectivePersonView?ProsperctiveType=3&amp;personType=0" iconCls="btn-tree-team22" text="已排除意向客户">
+				<Function id="_Prospective_cust_see_All_3_0" text="查看所有" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_see_3_0" text="查看" iconCls="btn-detail"/>
+				<Function id="_Prospective_cust_recovering_3_0" text="撤销" iconCls="btn-reset"/>
+			</Item>
+		</Items>
+	-->
+	<Items id="EnterpriseCustomer" text="企业借款客户管理" iconCls="btn-tree-team23" isPublic="false">
+		<Item id="EnterpriseView" iconCls="btn-tree-team23" text="客户档案管理">
+			<Function id="_seeAll_qykh" text="查看所有客户" iconCls="btn-detail"/>
+			<Function id="_detail_qykh" text="查看" iconCls="btn-detail"/>
+			<Function id="_create_qykh" text="建档" iconCls="btn-add" isControl="false" />
+			<Function id="_edit_qykh" text="编辑" iconCls="btn-edit"/>
+			<Function id="_remove_qykh" text="删除" iconCls="btn-delete"/>
+			<Function id="_enterprise_ywwl" text="业务往来" iconCls="btn-detail"/>
+			<Function id="_export_qykh" text="导出到excel" iconCls="btn-xls"/>
+			<Function id="_addBlack_qykh" text="加入黑名单" iconCls="btn-xls"/>
+		</Item>
+		<Item id="CustomerGrantManagement?singleType=enterprise" iconCls="btn-tree-team23" text="客户资源分配"></Item>
+		<!--
+			<Item id="enterpriseFianceAccount" iconCls="btn-tree-team23" text="资金账户管理">
+			    <Function id="_seeAll_qykh_zjzh" text="查看所有客户" iconCls="btn-detail"/>
+			</Item>
+		-->
+	</Items>
+	<Items id="PersonCustomer" text="个人借款客户管理" iconCls="btn-tree-team23" isPublic="false">
+		<Item id="PersonView" iconCls="btn-tree-team23" text="客户档案管理">
+			<Function id="_detail_sygrkh" text="查看所有客户" iconCls="btn-detail"/>
+			<Function id="_See_grkh" text="查看" iconCls="btn-detail"/>
+			<Function id="_create_grkh" text="建档" iconCls="btn-add" isControl="false" />
+			<Function id="_edit_grkh" text="编辑" iconCls="btn-edit"/>			
+			<Function id="_remove_grkh" text="删除" iconCls="btn-delete"/>
+			<Function id="_detail_ywwl" text="业务往来" iconCls="btn-detail"/>
+			<Function id="_export_grkh" text="导出到excel" iconCls="btn-xls"/>
+			<Function id="_addBlack_grkh" text="加入黑名单" iconCls="btn-xls"/>
+		</Item>
+		<Item id="CustomerGrantManagement?singleType=person" iconCls="btn-tree-team23" text="客户资源分配"></Item>
+		<!--
+			<Item id="PersonFianceAccount" iconCls="btn-tree-team23" text="资金账户管理">
+			     <Function id="_detail_sygrkh_zjzh" text="查看所有客户" iconCls="btn-detail"/>
+			</Item>
+	 	-->
+	 </Items>
+</Menus>

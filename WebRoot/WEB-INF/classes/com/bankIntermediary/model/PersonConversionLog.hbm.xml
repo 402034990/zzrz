@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+	name="com.bankIntermediary.model.PersonConversionLog"
+	table="person_conversion_log" select-before-update="false"
+	dynamic-update="false" dynamic-insert="false" optimistic-lock="version">
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+            <generator class="native"/>
+        </id>
+    	<property
+	        name="result"
+	        type="java.lang.String"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="result"
+	        length="512"
+	        not-null="true"
+	        unique="false"
+	    />
+    	<property
+	        name="operationName"
+	        type="java.lang.String"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="operationName"
+	        length="64"
+	        not-null="true"
+	        unique="false"
+	    />
+    	 <property
+	         name="personName"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="personName"
+	         length="64"
+	         not-null="true"
+	         unique="false"
+	     />
+    	<property
+	        name="createtime"
+	        type="java.util.Date"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="createtime"
+	        length="20"
+	        not-null="false"
+	        unique="false"
+	    />
+    	<property
+	        name="flag"
+	        type="java.lang.Short"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="flag"
+	        length="8"
+	        unique="false"
+	    />
+    	  <property
+	          name="operationId"
+	          type="java.lang.Long"
+	          update="true"
+	          insert="true"
+	          access="property"
+	          column="operationId"
+	          length="20"
+	          not-null="true"
+	          unique="false"
+	      />
+        <property
+            name="personId"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="personId"
+            length="20"
+            not-null="true"
+            unique="false"
+        />
+    </class>
+</hibernate-mapping>

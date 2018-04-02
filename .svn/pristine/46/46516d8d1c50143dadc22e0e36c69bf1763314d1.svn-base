@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+	name="com.bankIntermediary.model.CsPersonPolicy"
+	table="cs_person_policy" select-before-update="false"
+	dynamic-update="false" dynamic-insert="false" optimistic-lock="version">
+		<id
+            name="id"
+            column="id"
+            type="java.lang.Long"
+            length="19"
+        >
+        <generator class="native"/>
+        </id>
+    	 
+    	<property
+	        name="paymentYear"
+	        type="java.lang.Integer"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="paymentYear"
+	        length="11"
+	        unique="false"
+	    />
+    	<property
+	        name="moneyOfYear"
+	        type="java.math.BigDecimal"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="moneyOfYear"
+	        precision="20"
+	        scale="2"
+	        unique="false"
+	    />
+    	<property
+        name="createtime"
+        type="java.util.Date"
+        update="true"
+        insert="true"
+        access="property"
+        column="createtime"
+        length="20"
+        not-null="false"
+        unique="false"
+    />
+    	<property
+	        name="state"
+	        type="java.lang.Short"
+	        update="true"
+	        insert="true"
+	        access="property"
+	        column="state"
+	        length="8"
+	        unique="false"
+	    />
+    	
+       
+	   	 <property
+		     name="insureCompany"
+		     type="java.lang.String"
+		     update="true"
+		     insert="true"
+		     access="property"
+		     column="insureCompany"
+		     length="128"
+		     not-null="true"
+		     unique="false"
+		 />
+      	 <property
+	         name="insurerName"
+	         type="java.lang.String"
+	         update="true"
+	         insert="true"
+	         access="property"
+	         column="insurerName"
+	         length="32"
+	         not-null="true"
+	         unique="false"
+	     />
+        <property
+            name="personId"
+            type="java.lang.Long"
+            update="true"
+            insert="true"
+            access="property"
+            column="personId"
+            length="10"
+            not-null="true"
+            unique="false"
+        />
+        
+    </class>
+</hibernate-mapping>

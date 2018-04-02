@@ -1,0 +1,7 @@
+return '<div style="width:144px; height:84px; margin:10px 0px 0px 20px; padding:1px 1px 1px 1px"><img src="'
+													+ __ctxPath
+													+ '/'
+													+ personData.personSFZZUrl
+													+ '" ondblclick=showPic("'
+													+ personData.personSFZZUrl
+													+ '") width =140 height=80  /></div>'

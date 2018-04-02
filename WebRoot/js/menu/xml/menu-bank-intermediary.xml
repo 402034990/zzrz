@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Menus id="Mod_bank_intermediary" text="银行中介业务" iconCls="mod-org">
+	<Items id="ca2pContract" text="客户管理" iconCls="btn-tree-team30" >
+		<Item id="telephoneNO" text="手机号未检测到" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="quickPerson" text="客户快速查询" iconCls="btn-tree-team30" isShow="false" />
+	</Items>
+	<Items id="CustomerIntentionManagement" text="客户意向管理" iconCls="btn-tree-team30">
+		<Item id="WeChatIntentionalPool" text="微信端意向池" iconCls="btn-tree-team30"></Item>
+		<Item id="AllMyIntentional" text="我的全部意向" iconCls="btn-tree-team30"></Item>
+		<Item id="AllMyFollowIntentional" text="我的待跟进意向" iconCls="btn-tree-team30"></Item>
+		<Item id="ExclusionIntention" text="已排除意向" iconCls="btn-tree-team30"></Item>
+		<Item id="NoAnswerRecord" text="未接听记录" iconCls="btn-tree-team30"></Item>
+		<Item id="ResourceTransferManagement" text="资源转交管理" iconCls="btn-tree-team30"></Item>
+	</Items>
+	<Items id="CustomerFileManagement" text="客户档案管理" iconCls="btn-tree-team30">
+		<Item id="CustomerManagement" text="客户管理" iconCls="btn-tree-team30"></Item>
+		<Item id="CustomerBelongingManagement" text="客户归属管理" iconCls="btn-tree-team30"></Item>
+		<Item id="CustomerFollowManagement" text="客户跟进管理" iconCls="btn-tree-team30"></Item>
+	</Items>
+	
+	<!-- 贷款项目管理-->
+	<Items id="loanProjectManagement" text="贷款项目管理" iconCls="btn-tree-team30" >
+		<Item id="businessManagementFrom" text="业务办理" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="contractSigning" text="合同签署" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="directorPproval" text="主管审批" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="financialPproval" text="财务审批" iconCls="btn-tree-team30" isShow="false" />
+	</Items>
+	<!-- 待办任务池管理 -->
+	<Items id="taskPoolManagement" text="待办任务池管理 " iconCls="btn-tree-team30" >
+		<Item id="taskAllocation" text="待办任务分配" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="bakBusinessManagement" text="银行业务办理" iconCls="btn-tree-team30" isShow="false" />
+	</Items>
+	<!-- 企业合作机构 -->
+	<Items id="enterpriseCooperationOrganization" text="企业合作机构 " iconCls="btn-tree-team30" >
+		<Item id="enterpriseFileManagement" text="合作企业档案管理" iconCls="btn-tree-team30" isShow="false" />
+	</Items>
+	
+	
+	<Items id="commissions" text="佣金核算管理" iconCls="btn-tree-team30" >
+		<Item id="commissionManage" text="佣金核算列表" iconCls="btn-tree-team30" isShow="false" />
+	 </Items>
+	 <Items id="financialAccount" text="财务账款台账" iconCls="btn-tree-team30" >
+	 	<Item id="chargeManage?businessType=SmallLoan" iconCls="btn-tree-team2" text="费用收取台账" >
+			 <Function id="_liushui_a_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_a_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_a_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_sOverdue_a_SmallLoan" text="逾期状态" iconCls="btn-setting"/>
+		</Item>
+		<Item id="channelfeeManage?businessType=SmallLoan" iconCls="btn-tree-team2" text="渠道佣金台账" >
+			 <Function id="_liushui_a_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_a_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_a_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_sOverdue_a_SmallLoan" text="逾期状态" iconCls="btn-setting"/>
+		</Item>
+		<Item id="businessfeeManage?businessType=SmallLoan" iconCls="btn-tree-team2" text="业务提成费用" >
+		    <Function id="_liushui_a_SmallLoan" text="流水对账" iconCls="btn-user-sel"/>
+			<Function id="_liushuisee_a_SmallLoan" text="查看" iconCls="btn-detail"/>
+			<Function id="_ping_a_SmallLoan" text="核销" iconCls="btn-ok"/>
+			<Function id="_sOverdue_a_SmallLoan" text="逾期状态" iconCls="btn-setting"/>
+		</Item>
+	 </Items>
+	 <Items id="customerChargebackManage" text="客户退单管理" iconCls="btn-tree-team30" >
+		<Item id="chargebackApply" text="退单申请" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="managerAuditing" text="主管审批" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="refundCapital" text="财务退款" iconCls="btn-tree-team30" isShow="false" />
+	 </Items>
+	 <Items id="recommendReward" text="推荐奖励统计" iconCls="btn-tree-team30" >
+		<Item id="recommendRewardList" text="推荐奖励列表" iconCls="btn-tree-team30" isShow="false" />
+	 </Items>
+	 <Items id="employeeManage" text="员工管理" iconCls="btn-tree-team30" >
+		<Item id="employeeLevelManage" text="业务员级别管理" iconCls="btn-tree-team30" isShow="false" />
+		<Item id="addEmployee" text="添加人员" iconCls="btn-tree-team30" isShow="false" />
+	 </Items>
+</Menus>
